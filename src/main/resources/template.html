@@ -1,0 +1,30 @@
+<html>
+  <span>[table from list]</span>
+  <table style="border-collapse: collapse;" cellspacing="1" cellpadding="5">
+    <tbody>
+      <tr align="center">
+        <td style="background-color:#edf5f9;border:1px solid #42B4ED;font-weight: bold;" width="25%">parameter</td>
+        <td style="background-color:#edf5f9;border:1px solid #42B4ED;font-weight: bold;" width="18%">value</td>
+        <td style="background-color:#edf5f9;border:1px solid #42B4ED;font-weight: bold;" width="57%">comment</td>
+      </tr>
+      
+      <!-- Output rows from java.util.List -->
+      <#list itemList as item>
+      <tr>
+        <td style="border: 1px solid #42B4ED;">${item.param}</td>
+        <td style="border: 1px solid #42B4ED;">${item.value}</td>
+        <td style="border: 1px solid #42B4ED;">${item.comment}</td>
+      </tr>
+      </#list>   
+    </tbody>
+  </table>
+  
+  <!-- Output a row from java.util.Map -->
+  </br>
+  <div>[value from map]</div>
+  <#list mapValue as key, value>
+  <div>
+    <span>${key}:${value}</span>
+  </div>
+  </#list>
+</html>

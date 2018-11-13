@@ -1,0 +1,38 @@
+# Java
+*.class
+*.war
+*.ear
+
+# Eclipse
+.settings
+
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Maven
+target
+
+# Build
+out
+build
+bin
+
+# Other
+*.log
+*.swp
+*.bak
+*.tmp
+tmp/
+
+# Code Recommenders
+.recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+#Eclipse Web service test client
+*.emfws
+
